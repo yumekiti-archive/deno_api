@@ -8,4 +8,4 @@ services:
         volumes:
             - ../deno:/app
         ports:
-            - 1993:1993
+            - 8080:8080
