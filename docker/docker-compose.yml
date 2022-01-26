@@ -6,3 +6,4 @@ services:
         build: ./deno
         volumes:
             - ../deno:/app
+        tty: true
