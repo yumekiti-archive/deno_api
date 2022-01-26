@@ -1,9 +1,11 @@
-version: '3'
+version: '3.9'
 
 services:
 
     deno:
-        build: ./deno
+        build: ./../deno
+        container_name: deno
         volumes:
             - ../deno:/app
-        tty: true
+        ports:
+            - 1993:1993
