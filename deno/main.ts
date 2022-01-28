@@ -1,7 +1,5 @@
-import { serve } from './deps.ts';
+import HelloWorld from './hello-world.ts';
+import HelloWorldApi from './hello-world-api.ts';
 
-function handler(req: Request): Response {
-    return new Response("Hello, World!");
-}
-
-serve(handler, { port: 8080 });
+HelloWorld()
+HelloWorldApi()
