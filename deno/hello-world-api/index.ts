@@ -1,4 +1,4 @@
-import { serve } from './deps.ts';
+import { serve } from '../deps.ts';
 
 export default function(){
 
@@ -8,7 +8,7 @@ export default function(){
 
     // serve(handler, { port: 8080 });
 
-    console.log("http://localhost:8080/");
-    serve((req) => new Response("Hello World\n"), { port: 8080 });
+    console.log("http://localhost:8000/");
+    serve((req) => new Response("Hello World\n"), { port: 8000 });
 
 }
